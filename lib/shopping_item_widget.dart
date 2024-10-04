@@ -3,11 +3,13 @@ import "package:flutter/material.dart";
 class ShoppingItemWidget extends StatelessWidget {
   final String name;
   final String quantity;
+  final Function() deleteFunction;
 
   const ShoppingItemWidget({
     super.key,
     required this.name,
     required this.quantity,
+    required this.deleteFunction,
   });
 
   @override
@@ -23,9 +25,7 @@ class ShoppingItemWidget extends StatelessWidget {
           ],
         ),
         trailing: IconButton(
-          onPressed: () {
-
-          },
+          onPressed: () => deleteFunction(),
           icon: const Icon(Icons.delete),
         ),
         contentPadding: const EdgeInsets.only(

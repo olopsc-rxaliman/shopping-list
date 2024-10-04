@@ -2,7 +2,12 @@ import "package:flutter/material.dart";
 import "package:shopping_list/hive.dart";
 
 class AddItemPage extends StatefulWidget {
-  const AddItemPage({super.key});
+  final Function() refreshFunction;
+
+  const AddItemPage({
+    super.key,
+    required this.refreshFunction,
+  });
 
   @override
   State<AddItemPage> createState() => _AddItemPageState();
@@ -25,6 +30,7 @@ class _AddItemPageState extends State<AddItemPage> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           if (_nameController.text.isNotEmpty && _quantityController.text.isNotEmpty) {
+            widget.refreshFunction();
             HiveFunctions.addItem({
               'name': _nameController.text,
               'quantity': _quantityController.text,
