@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:shopping_list/hive.dart';
+import 'package:shopping_list/services/hive.dart';
 import 'package:shopping_list/pages/home_page.dart';
 
 void main() async {

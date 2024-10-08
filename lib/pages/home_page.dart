@@ -2,7 +2,7 @@ import "package:flutter/material.dart";
 import "package:shopping_list/components/app_bar.dart";
 import "package:shopping_list/components/no_items_widget.dart";
 import "package:shopping_list/components/shopping_list_widget.dart";
-import "package:shopping_list/hive.dart";
+import "package:shopping_list/services/hive.dart";
 import "package:shopping_list/pages/add_item_page.dart";
 
 class HomePage extends StatefulWidget {

@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import "package:shopping_list/hive.dart";
-import "package:shopping_list/shopping_item_widget.dart";
+import "package:shopping_list/services/hive.dart";
+import "package:shopping_list/components/shopping_item_widget.dart";
 
 class ShoppingListWidget extends StatelessWidget {
   final List shoppingList;

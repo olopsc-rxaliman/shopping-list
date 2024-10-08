@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:shopping_list/hive.dart";
+import "package:shopping_list/services/hive.dart";
 
 class AddItemPage extends StatefulWidget {
   final Function() refreshFunction;
